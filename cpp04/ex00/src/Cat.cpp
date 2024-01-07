@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgebski <kgebski@student.42wolfsburg.de    +#+  +:+       +#+        */
+/*   By: kgebski <kgebski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 12:34:26 by kgebski           #+#    #+#             */
-/*   Updated: 2023/07/04 13:02:22 by kgebski          ###   ########.fr       */
+/*   Updated: 2024/01/07 01:28:15 by kgebski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ Cat& Cat::operator=(const Cat& original)
 
 void Cat::makeSound() const
 {
-	std::cout << DARKBLUE << "Miau miau k***a\n" << NC;
+	std::cout << DARKBLUE << "Miau miau\n" << NC;
 }
 
 Cat::~Cat()

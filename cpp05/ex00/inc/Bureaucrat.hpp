@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgebski <kgebski@student.42wolfsburg.de    +#+  +:+       +#+        */
+/*   By: kgebski <kgebski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/05 14:37:24 by kgebski           #+#    #+#             */
-/*   Updated: 2023/07/05 16:13:52 by kgebski          ###   ########.fr       */
+/*   Updated: 2024/01/07 02:43:44 by kgebski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@ class Bureaucrat
 	Bureaucrat(const Bureaucrat& original);
 	~Bureaucrat();
 	Bureaucrat& operator=(const Bureaucrat& original);
-	
+
 	std::string	getName() const;
 	int			getGrade() const;
-	
+
 	void incrementGrade();
 	void decrementGrade();
-	
+
 	struct GradeTooHighException : public std::exception
 	{
 		virtual const char* what() const _NOEXCEPT;
@@ -36,7 +36,7 @@ class Bureaucrat
 
 	struct GradeTooLowException : public std::exception
 	{
-		virtual const char* what() const _NOEXCEPT; 
+		virtual const char* what() const _NOEXCEPT;
 	};
 
   private:

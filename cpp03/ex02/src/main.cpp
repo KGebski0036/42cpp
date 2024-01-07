@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgebski <kgebski@student.42wolfsburg.de    +#+  +:+       +#+        */
+/*   By: kgebski <kgebski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/02 16:28:13 by kgebski           #+#    #+#             */
-/*   Updated: 2023/07/03 13:41:30 by kgebski          ###   ########.fr       */
+/*   Updated: 2024/01/07 00:43:28 by kgebski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int main()
 	srand (time(NULL));
 	ClapTrap att("Attacker");
 	FragTrap def("Defender");
-	
+
 	std::cout << "\n";
 
 	def.highFivesGuys();
@@ -34,10 +34,11 @@ int main()
 		att.attack(def.getName());
 		def.takeDamage(att.getAttackDamage());
 		def.beRepaired(rand() % 5);
+		def.highFivesGuys();
 		summary(&att, &def);
 		sleep(1);
 	}
-	
+
 	return 0;
 }
 

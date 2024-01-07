@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kgebski <kgebski@student.42wolfsburg.de    +#+  +:+       +#+        */
+/*   By: kgebski <kgebski@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/01 16:47:37 by kgebski           #+#    #+#             */
-/*   Updated: 2023/07/01 19:36:56 by kgebski          ###   ########.fr       */
+/*   Updated: 2024/01/07 00:17:09 by kgebski          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ Fixed::Fixed(const int value)
 	_value = value << _fractional_bits;
 }
 
-Fixed::Fixed(const float value) 
+Fixed::Fixed(const float value)
 {
 	std::cout << DARKBLUE << "Float " << GREEN << "constructor called\n" << NC;
 	_value = roundf(value * (1 << _fractional_bits));
@@ -50,7 +50,7 @@ int Fixed::getRawBits() const
 }
 void Fixed::setRawBits(const int raw){_value = raw;}
 
-Fixed::~Fixed() 
+Fixed::~Fixed()
 {
 	std::cout << RED << "Default constructor called\n" << NC;
 }

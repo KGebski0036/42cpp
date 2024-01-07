@@ -3,15 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: kgebski <kgebski@student.42wolfsburg.de    +#+  +:+       +#+         #
+#    By: kgebski <kgebski@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/30 16:17:29 by kgebski           #+#    #+#              #
-#    Updated: 2023/07/01 13:59:17 by kgebski          ###   ########.fr        #
+#    Updated: 2024/01/07 00:05:04 by kgebski          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC		= g++
-CFLAGS	= -Wall -Werror -Wextra -std=c++98
+CFLAGS	= -Wall -Werror -Wextra
 SRCDIR	= src
 INCDIR	= inc
 OBJDIR	= obj
